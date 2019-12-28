@@ -92,7 +92,7 @@ h6 {
   }
 
   #qbootstrap-header #navbar li a {
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -109,7 +109,7 @@ h6 {
   #qbootstrap-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #67472d !important;
+    color: #fff !important;
   }
 
   #qbootstrap-header #navbar li.active a span:before {
@@ -122,6 +122,10 @@ h6 {
 #qbootstrap-header .navbar {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.navbar-collapse {
+  border-top: none;
 }
 
 #qbootstrap-header #navbar li a {
@@ -143,7 +147,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #67472d;
+  background-color: #fff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -190,8 +194,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  height: 100%;
 }
 
 #qbootstrap-header .navbar-brand img {
@@ -201,7 +203,7 @@ h6 {
 
 #qbootstrap-header.navbar-fixed-top {
   position: fixed !important;
-  background: #fff;
+  background-color: #4a6b58;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -215,20 +217,20 @@ h6 {
 }
 
 #qbootstrap-header.navbar-fixed-top #navbar li a {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 #qbootstrap-header.navbar-fixed-top #navbar li a:hover {
-  color: #67472d;
+  color: #fff;
 }
 
 #qbootstrap-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #67472d;
+  color: #fff;
 }
 
 #qbootstrap-header.navbar-fixed-top #navbar li.active a span:before {
@@ -1648,7 +1650,7 @@ h6 {
 
 .qbootstrap-nav-toggle.active i::before,
 .qbootstrap-nav-toggle.active i::after {
-  background: #67472d;
+  background: #fff;
 }
 
 .qbootstrap-nav-toggle:hover,
@@ -1666,11 +1668,11 @@ h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #67472d;
+  color: #fff;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #67472d;
+  background: #fff;
   transition: all .2s ease-out;
 }
 
@@ -1679,7 +1681,7 @@ h6 {
   content: '';
   width: 25px;
   height: 3px;
-  background: #67472d;
+  background: #fff;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;

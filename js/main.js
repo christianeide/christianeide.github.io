@@ -105,7 +105,6 @@
 
 	// Page Nav
 	var clickMenu = function () {
-
 		$('a:not([class="external"])').click(function (event) {
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
@@ -122,7 +121,6 @@
 			event.preventDefault();
 			return false;
 		});
-
 	};
 
 	// Reflect scrolling in navigation
@@ -159,32 +157,6 @@
 		});
 
 	};
-
-
-	// Window Scroll
-	var windowScroll = function () {
-		var lastScrollTop = 0;
-
-		$(window).scroll(function (event) {
-
-			var header = $('#qbootstrap-header'),
-				scrlTop = $(this).scrollTop();
-
-			if (scrlTop > 500 && scrlTop <= 2000) {
-				header.addClass('navbar-fixed-top qbootstrap-animated slideInDown');
-			} else if (scrlTop <= 500) {
-				if (header.hasClass('navbar-fixed-top')) {
-					header.addClass('navbar-fixed-top qbootstrap-animated slideOutUp');
-					setTimeout(function () {
-						header.removeClass('navbar-fixed-top qbootstrap-animated slideInDown slideOutUp');
-					}, 100);
-				}
-			}
-
-		});
-	};
-
-
 
 	// Animations
 	var contentWayPoint = function () {
@@ -265,7 +237,6 @@
 		sliderMain();
 		clickMenu();
 		parallax();
-		windowScroll();
 		navigationSection();
 		contentWayPoint();
 		inlineSVG();
