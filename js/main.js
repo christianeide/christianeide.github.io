@@ -54,7 +54,9 @@
 	// Parallax
 	var parallax = function () {
 		if (!isiPad() || !isiPhone()) {
-			$(window).stellar();
+			$(window).stellar({
+				horizontalScrolling: false
+			  });
 		}
 	};
 
@@ -90,6 +92,7 @@
 		});
 
 	};
+
 	var navigationSection = function () {
 
 		var $section = $('div[data-section]');
