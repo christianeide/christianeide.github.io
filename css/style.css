@@ -331,7 +331,6 @@ h6 {
   transition: 0.3s;
 }
 
-#qbootstrap-couple,
 #qbootstrap-countdown,
 #qbootstrap-groom-bride,
 #qbootstrap-story,
@@ -346,7 +345,6 @@ h6 {
 
 @media screen and (max-width: 480px) {
 
-  #qbootstrap-couple,
   #qbootstrap-countdown,
   #qbootstrap-groom-bride,
   #qbootstrap-story,
@@ -536,50 +534,6 @@ h6 {
   fill: #fff;
 }
 
-#qbootstrap-couple img {
-  margin-bottom: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-
-#qbootstrap-couple h3 {
-  font-size: 34px;
-  font-family: "Clicker Script", cursive;
-  color: #67472d;
-}
-
-@media screen and (max-width: 768px) {
-  #qbootstrap-couple h3 {
-    font-size: 35px;
-  }
-}
-
-#qbootstrap-couple span {
-  color: #67472d;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  font-size: 14px;
-  border: 1px solid rgba(255, 132, 124, 0.3);
-  padding: 2px 5px;
-}
-
-#qbootstrap-couple .amp-center {
-  font-size: 60px;
-  margin-top: 100%;
-  color: #67472d;
-}
-
-@media screen and (max-width: 768px) {
-  #qbootstrap-couple .amp-center {
-    font-size: 40px;
-  }
-}
-
-#qbootstrap-couple .amp-center .colored .svg {
-  fill: #67472d;
-}
 
 .qbootstrap-bg {
   background-size: cover;
