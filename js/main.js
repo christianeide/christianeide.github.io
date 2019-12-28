@@ -15,46 +15,28 @@
 		);
 	};
 
+	// var sliderMain = function () {
 
+	// 	$('#qbootstrap-slider-hero .flexslider').flexslider({
+	// 		animation: "fade",
+	// 		slideshowSpeed: 5000,
+	// 		directionNav: true,
+	// 		start: function () {
+	// 			setTimeout(function () {
+	// 				$('.slider-text').removeClass('animated fadeInUp');
+	// 				$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+	// 			}, 500);
+	// 		},
+	// 		before: function () {
+	// 			setTimeout(function () {
+	// 				$('.slider-text').removeClass('animated fadeInUp');
+	// 				$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+	// 			}, 500);
+	// 		}
 
-	// Carousel Feature Slide
-	var testimonialCarousel = function () {
+	// 	});
 
-		var owl = $('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			animateOut: 'fadeOut',
-			items: 1,
-			loop: true,
-			margin: 0,
-			nav: false,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: false
-		});
-	};
-
-	var sliderMain = function () {
-
-		$('#qbootstrap-slider-hero .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
-			directionNav: true,
-			start: function () {
-				setTimeout(function () {
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			},
-			before: function () {
-				setTimeout(function () {
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			}
-
-		});
-
-	};
+	// };
 
 
 
@@ -198,48 +180,14 @@
 	};
 
 
-	var inlineSVG = function () {
-		$('img.svg').each(function () {
-			var $img = $(this);
-			var imgID = $img.attr('id');
-			var imgClass = $img.attr('class');
-			var imgURL = $img.attr('src');
-
-			$.get(imgURL, function (data) {
-				// Get the SVG tag, ignore the rest
-				var $svg = jQuery(data).find('svg');
-
-				// Add replaced image's ID to the new SVG
-				if (typeof imgID !== 'undefined') {
-					$svg = $svg.attr('id', imgID);
-				}
-				// Add replaced image's classes to the new SVG
-				if (typeof imgClass !== 'undefined') {
-					$svg = $svg.attr('class', imgClass + ' replaced-svg');
-				}
-
-				// Remove any invalid XML tags as per http://validator.w3.org
-				$svg = $svg.removeAttr('xmlns:a');
-
-				// Replace image with new SVG
-				$img.replaceWith($svg);
-
-			}, 'xml');
-
-		});
-	};
-
-
 	// Document on load.
 	$(function () {
 		burgerMenu();
-		testimonialCarousel();
-		sliderMain();
+		// sliderMain();
 		clickMenu();
 		parallax();
 		navigationSection();
 		contentWayPoint();
-		inlineSVG();
 	});
 
 

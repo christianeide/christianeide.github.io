@@ -288,7 +288,7 @@ h6 {
   padding: 0;
 }
 
-.section-heading.svg-sm .svg {
+.section-heading.svg-sm .monogram {
   height: 260px;
   margin-bottom: -80px;
   padding: 0;
@@ -525,14 +525,14 @@ h6 {
   letter-spacing: 10px;
 }
 
-.qbootstrap-cover .display-tc .svg-sm .svg,
-.video-hero .display-tc .svg-sm .svg {
+.qbootstrap-cover .display-tc .svg-sm .monogram,
+.video-hero .display-tc .svg-sm .monogram {
   height: 260px;
   margin-bottom: 0;
 }
 
-.qbootstrap-cover .display-tc .colored .svg,
-.video-hero .display-tc .colored .svg {
+.qbootstrap-cover .display-tc .colored .monogram,
+.video-hero .display-tc .colored .monogram {
   fill: #fff;
 }
 
@@ -799,13 +799,13 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#qbootstrap-countdown .section-heading.svg-sm .svg {
+#qbootstrap-countdown .section-heading.svg-sm .monogram {
   height: 260px;
   margin-bottom: -50px;
   padding: 0;
 }
 
-#qbootstrap-countdown .section-heading.colored .svg {
+#qbootstrap-countdown .section-heading.colored .monogram {
   fill: #fff;
 }
 
@@ -1160,13 +1160,13 @@ h6 {
   }
 }
 
-#qbootstrap-testimonials .section-heading.svg-sm .svg {
+#qbootstrap-testimonials .section-heading.svg-sm .monogram {
   height: 260px;
   margin-bottom: -50px;
   padding: 0;
 }
 
-#qbootstrap-testimonials .section-heading.colored .svg {
+#qbootstrap-testimonials .section-heading.colored .monogram {
   fill: #fff;
 }
 
@@ -1432,13 +1432,13 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#qbootstrap-started .section-heading.svg-sm .svg {
+#qbootstrap-started .section-heading.svg-sm .monogram {
   height: 260px;
   margin-bottom: -50px;
   padding: 0;
 }
 
-#qbootstrap-started .section-heading.colored .svg {
+#qbootstrap-started .section-heading.colored .monogram {
   fill: #fff;
 }
 
