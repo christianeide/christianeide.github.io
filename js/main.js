@@ -258,24 +258,17 @@
 	};
 
 
-	// var bgVideo = function () {
-	// 	$('.player').mb_YTPlayer();
-	// };
-
-
 	// Document on load.
 	$(function () {
-
 		burgerMenu();
 		testimonialCarousel();
 		sliderMain();
 		clickMenu();
 		parallax();
-		// windowScroll();
+		windowScroll();
 		navigationSection();
 		contentWayPoint();
 		inlineSVG();
-		// bgVideo();
 	});
 
 
