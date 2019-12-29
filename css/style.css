@@ -68,6 +68,18 @@ h6 {
   background: #f9f6f0;
 }
 
+.parallax {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.abs {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+
 #qbootstrap-header {
   position: absolute;
   z-index: 99;
@@ -393,6 +405,7 @@ h6 {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {

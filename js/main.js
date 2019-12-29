@@ -59,8 +59,12 @@
 		// 	  });
 		// }
 
-		// var images = document.querySelectorAll('.parallax');
-		// new simpleParallax(images);
+		var images = document.querySelectorAll('.parallax');
+		new simpleParallax(images, {
+			orientation: "down",
+			scale: 1.5,
+			// overflow: true
+		});
 	};
 
 
