@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" lang="no">
 <!--<![endif]-->
 
 <head>
@@ -50,7 +50,7 @@
 </head>
 
 <body>
-	<header role="banner" id="qbootstrap-header" class="navbar-fixed-top qbootstrap-animated slideInDown">
+	<header id="qbootstrap-header" class="navbar-fixed-top qbootstrap-animated slideInDown">
 		<div class="container">
 			<!-- <div class="row"> -->
 			<nav class="navbar navbar-default">
@@ -81,8 +81,7 @@
 
 	<div class="qbootstrap-hero" data-section="home">
 		<div class="qbootstrap-overlay"></div>
-		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5"
-			style="background-image: url(images/lights.jpg);">
+		<div class="qbootstrap-cover text-center parallax">
 			<div class="display-t">
 				<div class="display-tc">
 					<div class="container">
@@ -98,6 +97,10 @@
 				</div>
 			</div>
 		</div>
+		<div class="abs">
+			<img src="images/lights.jpg" class="parallax" alt="Lights" />
+		</div>
+
 	</div>
 
 	<div id="qbootstrap-when-where" data-section="vielse">
@@ -197,11 +200,8 @@
 			</div>
 		</div>
 	</div>
-	</div>
 
-	<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5"
-		style="background-image: url(images/gokstad1.png);" data-section="fredag">
-		<div class="overlay"></div>
+	<div id="qbootstrap-countdown" data-section="fredag">
 		<div class="display-over">
 			<div class="container">
 				<div class="row animate-box">
@@ -222,6 +222,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="abs">
+			<img src="images/gokstad1.png" class="parallax" alt="Gokstad kystlag" />
 		</div>
 	</div>
 
@@ -264,9 +268,7 @@
 	</div>
 
 
-	<div id="qbootstrap-testimonials" class="qbootstrap-greetings qbootstrap-cover" data-section="onskeliste"
-		data-stellar-background-ratio="0.5" style="background-image: url(images/blomster.jpg);">
-		<div class="overlay"></div>
+	<div id="qbootstrap-testimonials" class="qbootstrap-greetings qbootstrap-cover" data-section="onskeliste">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-12 section-heading text-center svg-sm colored">
@@ -281,10 +283,12 @@
 							<p>Vi har enda ikke fått satt opp våre ønskelister. Ønskelister kommer rundt mars/apri.</p>
 						</blockquote>
 					</div>
-
 				</div>
-
 			</div>
+		</div>
+
+		<div class="abs">
+			<img src="images/blomster.jpg" class="parallax" alt="blomster" />
 		</div>
 	</div>
 
@@ -325,13 +329,15 @@
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuerymigrate to handle 3.0 version of jquery for stellar -->
-	<script src="js/jquery-migrate.js"></script>
+	<!-- <script src="js/jquery-migrate.js"></script> -->
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<!-- <script src="js/jquery.stellar.min.js"></script> -->
+	<!-- <script src="js/parallax.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
