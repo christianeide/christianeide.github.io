@@ -53,11 +53,14 @@
 
 	// Parallax
 	var parallax = function () {
-		if (!isiPad() || !isiPhone()) {
-			$(window).stellar({
-				horizontalScrolling: false
-			  });
-		}
+		// if (!isiPad() || !isiPhone()) {
+		// 	$(window).stellar({
+		// 		horizontalScrolling: false
+		// 	  });
+		// }
+
+		// var images = document.querySelectorAll('.parallax');
+		// new simpleParallax(images);
 	};
 
 
