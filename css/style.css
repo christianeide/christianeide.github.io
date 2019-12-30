@@ -69,10 +69,30 @@ h6 {
 }
 
 .parallax {
-    width: 100%;
-    height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     object-fit: cover;
+    position: relative;
 }
+
+.simpleParallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* .parallax::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  content: "";
+  opacity: 0.4;
+} */
 
 .abs {
   position: absolute !important;
