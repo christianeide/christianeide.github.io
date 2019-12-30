@@ -939,7 +939,7 @@ h6 {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 #qbootstrap-testimonials .box-testimony p {
