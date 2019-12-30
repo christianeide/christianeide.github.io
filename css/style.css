@@ -68,31 +68,30 @@ h6 {
   background: #f9f6f0;
 }
 
-.parallax {
-  max-width: 100%;
-  min-height: 100%;
-    /* width: 100%; */
-    /* height: 100%; */
-    object-fit: cover;
-    position: relative;
-}
-
 .simpleParallax {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-/* .parallax::before {
+.simpleParallax::before {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: black;
   content: "";
-  opacity: 0.4;
-} */
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.parallax {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: relative;
+}
 
 .abs {
   position: absolute !important;
@@ -410,17 +409,6 @@ h6 {
   .qbootstrap-hero {
     height: 700px;
   }
-}
-
-.qbootstrap-overlay {
-  position: absolute !important;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .qbootstrap-cover,
@@ -877,10 +865,7 @@ h6 {
 }
 
 .date {
-  display: block;
-  margin-bottom: 20px;
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
@@ -935,63 +920,16 @@ h6 {
   background-repeat: no-repeat;
 }
 
-#qbootstrap-testimonials {
-  /* background-color: #67472d; */
-  z-index: 0;
-}
-
-#qbootstrap-testimonials .overlay {
-  position: absolute !important;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-#qbootstrap-testimonials .section-heading {
+.qbootstrap-greetings .section-heading {
   margin-bottom: 0 !important;
 }
 
-#qbootstrap-testimonials .section-heading h2 {
+.qbootstrap-greetings .section-heading h2 {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  #qbootstrap-testimonials .section-heading h2 {
-    font-size: 30px;
-  }
-}
-
-#qbootstrap-testimonials .section-heading.svg-sm .monogram {
-  height: 200px;
-  margin-bottom: -50px;
-  padding: 0;
-}
-
-#qbootstrap-testimonials .section-heading.colored .monogram {
-  fill: #fff;
-}
-
-#qbootstrap-testimonials .box-testimony {
-  margin-bottom: 2em;
-  float: left;
-}
-
-#qbootstrap-testimonials .box-testimony a {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-#qbootstrap-testimonials .box-testimony a:hover,
-#qbootstrap-testimonials .box-testimony a:focus,
-#qbootstrap-testimonials .box-testimony a:active {
-  color: white;
-  text-decoration: none;
-}
-
-#qbootstrap-testimonials .box-testimony blockquote {
+.qbootstrap-greetings .box-testimony {
+  margin-bottom: 40px;
   padding-left: 0;
   border-left: none;
   padding: 40px;
@@ -1001,110 +939,13 @@ h6 {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-}
-
-#qbootstrap-testimonials .box-testimony blockquote:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 40px;
-  border-top: 15px solid black;
-  border-top-color: #fff;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-}
-
-#qbootstrap-testimonials .box-testimony blockquote .quote {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 0;
-  display: table;
-  color: #fff;
-  width: 56px;
-  height: 56px;
-  margin-top: -30px;
-  background: #67472d;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-
-#qbootstrap-testimonials .box-testimony blockquote .quote>span {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#qbootstrap-testimonials .box-testimony blockquote p {
   font-style: italic;
 }
 
-#qbootstrap-testimonials .box-testimony .author {
-  line-height: 20px;
-  color: white;
-  font-size: 20px;
-  margin-left: 20px;
+#qbootstrap-testimonials .box-testimony p {
+  margin: 0
 }
 
-#qbootstrap-testimonials .box-testimony .author .subtext {
-  display: block;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
-}
-
-#qbootstrap-testimonials .testimony-slide {
-  position: relative;
-  color: #fff !important;
-  width: 90%;
-  margin: 0 auto;
-}
-
-#qbootstrap-testimonials .testimony-slide blockquote {
-  border: none;
-  position: relative;
-  padding: 0;
-  font-size: 30px;
-  font-family: "Clicker Script", cursive;
-  font-style: italic;
-}
-
-#qbootstrap-testimonials .arrow-thumb {
-  position: absolute;
-  top: 40%;
-  display: block;
-  width: 100%;
-}
-
-#qbootstrap-testimonials .arrow-thumb a {
-  font-size: 32px;
-  color: #dadada;
-}
-
-#qbootstrap-testimonials .arrow-thumb a:hover,
-#qbootstrap-testimonials .arrow-thumb a:focus,
-#qbootstrap-testimonials .arrow-thumb a:active {
-  text-decoration: none;
-}
-
-#qbootstrap-testimonials .owl-theme .owl-dots .owl-dot span {
-  background: rgba(255, 255, 255, 0.3) !important;
-}
-
-#qbootstrap-testimonials .owl-theme .owl-dots .active span {
-  background: white !important;
-}
-
-#qbootstrap-testimonials .qbootstrap-heading {
-  margin-bottom: 3em;
-}
-
-#qbootstrap-testimonials .qbootstrap-heading h2 {
-  color: #fff;
-  margin-bottom: 20px !important;
-}
 
 .groom-men img {
   margin-bottom: 20px;
@@ -1149,6 +990,7 @@ h6 {
   border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 0;
+  text-align: left;
 }
 
 .wedding-events .desc:after {
@@ -1167,16 +1009,16 @@ h6 {
   color: #67472d;
   display: block;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .wedding-events .desc .date {
   display: block;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .wedding-events .desc .date span {
-  display: block;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 .wedding-events .desc .icon-tip {
